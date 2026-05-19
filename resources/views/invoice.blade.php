@@ -24,7 +24,7 @@
         https://rankmyagent.tahometer.com/app/reports/{{ $report }}
     </a>
 </div>
-<table class="py">
+<table class="py lh">
     <thead>
         <tr class="py">
             <th>Item</th>

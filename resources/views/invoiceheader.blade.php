@@ -27,4 +27,7 @@
     .big {
         font-size: 18pt;
     }
+    .lh {
+        line-height: 20pt;
+    }
 </style>
