@@ -1,6 +1,6 @@
 <style>
     body {
-        font-family: "Helvetica", sans-serif;
+        font-family: "Verdana", sans-serif;
         font-style: normal;
         font-size: 12pt;
     }
