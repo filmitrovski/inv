@@ -44,6 +44,10 @@ class InvoiceController extends Controller
 
         $channel = $channels[$request->bank];
 
+        $filenameStart = $dateIterator->copy()->addDay();
+        $filenameEnd = $filenameStart->copy()->addDays(6);
+        $filename = $request->year . '_' . strtoupper($filenameStart->format('M_d')) . '_' . strtoupper($filenameEnd->format('M_d')) . '.pdf';
+
         return Pdf::view('invoice', [
             'rate' => $request->rate,
             'hours' => $hours,
@@ -59,6 +63,6 @@ class InvoiceController extends Controller
         ])
             ->headerView('invoiceheader')
             ->format('a4')
-            ->name('invoice.pdf');
+            ->name($filename);
     }
 }
